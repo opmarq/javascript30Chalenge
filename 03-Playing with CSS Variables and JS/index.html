@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing with css variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Image Live Editor</h2>
+        <div class="control-group">
+            <div class="control-item">
+                <label for="spacing">
+                    Spacing
+                </label>
+                <input type="range" name="spacing" data-sizing="px" min="0" max="100" value="10" >
+            </div>
+            <div class="control-item">
+                <label for="blur" >
+                    Blur
+                </label>
+                <input type="range" name="blur" data-sizing="px" min="0" max="10" value="0" >
+            </div>
+            <div class="control-item">
+                <label for="color">
+                    Color
+                </label>
+                <input type="color" name="color" value="#dddddd">
+            </div>
+        </div>
+
+        <div class="image-live">
+
+            <img src="mouna.jpg" alt="">
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
