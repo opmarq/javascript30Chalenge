@@ -1,0 +1,44 @@
+body{
+    background-image: url("cover.jpg");
+    background-size: 180%;
+    color: #fff;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 50px;
+    color: #555;
+    border: 2px solid #555;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container ul{
+    margin-top:50px;
+}
+
+ul li{
+    background-color: #fff;
+    color: #555;
+    list-style: none;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    width: 60px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.container{
+    display: block;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.pressed{
+    border: 5px solid #555;
+    transform: scale(1.2);
+}
