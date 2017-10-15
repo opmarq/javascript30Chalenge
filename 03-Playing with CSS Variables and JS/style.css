@@ -10,15 +10,10 @@
     text-align: center;
 }
 
-.control-group:after{
-    content: "";
-    clear: both;
-    display: block;
-}
+.control-group{
 
-.control-item{
-    width: 30%;
-    float: left;
+    display: flex;
+
 }
 
 .image-live{
