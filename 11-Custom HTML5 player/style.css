@@ -1,0 +1,51 @@
+*{
+    outline: none !important;
+}
+
+.player{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.player-progress{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.player-control{
+    position: absolute;
+    bottom: 5px;
+    background-color: rgba(0,0,0,0.2);
+    width: 500px;
+    padding-bottom: 5px;
+    transform: translateY(45px);
+    transition: 0.5s;
+}
+
+.progress-full{
+    height: 15px;
+    width: 0%;
+    background-color:#00FF7F;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.player-buttons button{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.player-buttons{
+    display: flex;
+}
+
+.player-buttons > *{
+    flex: 1;
+}
+
+input[type="range"],button{
+    cursor: pointer;
+}
