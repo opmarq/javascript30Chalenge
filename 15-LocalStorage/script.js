@@ -27,7 +27,7 @@ var addItem = function (e) {
 
     let item = {
         text: todoText.value,
-        status: true
+        status: false
     };
 
     todoList.push(item);
