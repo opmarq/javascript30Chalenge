@@ -1,0 +1,19 @@
+body{
+    background-color: #26A6FA;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    height: 300px;
+    box-shadow: 1px 1px 2px #444;
+}
+
+.container h1{
+    color:#000;
+    font-size: 3em;
+    margin: auto;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+}
