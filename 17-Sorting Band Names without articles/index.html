@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sort Without Articles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #bands {
+            list-style: inside square;
+            font-size: 16px;
+            background: rgba(56, 121, 217, 0.9);
+            width: 400px;
+            color: #fff;
+            margin: auto;
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        #bands li {
+            border-bottom: 1px solid #efefef;
+            padding: 20px;
+        }
+
+        #bands li:last-child {
+            border-bottom: 0;
+        }
+
+        a {
+            color: #ffc600;
+            text-decoration: none;
+        }
+    </style>
+
+    <ul id="bands"></ul>
+
+    <script>
+        const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+
+
+        let stripe = function (text) {
+
+            return text.replace(/^(an |the |a )/i, "");
+        }
+
+        let htmlContent = bands.sort((a,b)=>stripe(a) > stripe(b) ? 1 : -1)
+                                .map((element) => `<li>${element}</li>` )
+                                .join('');
+
+
+        document.querySelector("#bands").innerHTML = htmlContent;
+
+    </script>
+
+</body>
+
+</html>
