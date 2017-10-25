@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #26A6FA;
+}
+
+h1{
+    color: #ffffff;
+}
+
+.note{
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    background-image: url("bg.jpg");
+    background-origin: 0;
+    background-repeat: repeat-y;
+    background-size: cover;
+    text-align: left;
+    box-shadow: 2px 2px 2px #555;
+}
+
+.note p{
+    line-height: 35px;
+    font-size: 20px;
+}
