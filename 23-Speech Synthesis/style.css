@@ -1,0 +1,51 @@
+body{
+    font-family: "Open Sans";
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px #555555;
+}
+
+.container .heading{
+    text-align: center;
+    background-color: #26A6FA;
+    padding: 20px;
+}
+.container .heading h1{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0px;
+}
+.container .body{
+    padding: 20px;
+    background-color: #fff;
+}
+
+select,input,textarea{
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    flex: 1;
+    border: 1px solid #bbbbbb;
+    background-color: #dddddd;
+    padding: 5px;
+    background-color: #26A6FA;
+    color: #fff;
+    font-size: 15px;
+}
