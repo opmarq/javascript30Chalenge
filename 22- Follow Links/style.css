@@ -1,0 +1,49 @@
+body{
+    background-color: #3879D9;
+    font-family: "Open Sans";
+    color: #ffffff;
+}
+ul{
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.navbar{
+    text-align: center;
+    padding: 25px;
+}
+
+.container ul li:first-child{
+    margin-left: 0;
+}
+.container ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: underline;
+    z-index: 10;
+
+}
+
+.highlight{
+    transition: 0.2s;
+    border-radius: 5px;
+    background-color: #FF9900;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 0 5px;
+}
